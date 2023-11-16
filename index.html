@@ -72,8 +72,9 @@
       <div class="swiper-slide"> <img src="img/beagle de corpo.png" alt="beagle de corpo-raca de medio porte"></div>
       <div class="swiper-slide"> <img src="img/poodle de corpo.jpg" alt="poodle de corpo-raca de medio porte "></div>
       <div class="swiper-slide"> <img src="img/buldogue de corpo.jpeg" alt="buldogue de corpo-raca de medio porte "></div>
-      <div class="swiper-slide"> <img src="img/lulu da pomerania.jpg" alt="lulu da pomerania de corpo-raca de medio porte "></div>
-      <div class="swiper-slide"> <img src="img/Yorkshire de corpo.jpg" alt="poodle de corpo-raca de medio porte "></div>
+      <div class="swiper-slide"> <img src="img/lulu da pomerania.jpg" alt="lulu da pomerania de corpo-raca de pequeno porte "></div>
+      <div class="swiper-slide"> <img src="img/Yorkshire de corpo.jpg" alt="poodle de corpo-raca de pequeno porte "></div>
+      <div class="swiper-slide"> <img src="img/pug.jpeg" alt="pug de corpo-raca de pequeno porte "></div>
       </div>
 
   
@@ -106,17 +107,45 @@
             <a href="#" class="botões__ancora"> Saiba mais</a>
         </div>
       </div>
+    </section>
 
+    <section class="tópicos">
+        <h2 class=" tópicos__título"> TÓPICO VISITADOS RECENTEMENTE</h2>
+        <ul class="tópicos__lista">
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">  Yorkshire</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link"> Golden Retriever</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link"> Shih tzu</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link"> pinscher</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link"> lulu da pmerania </a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link"> poodle </a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link"> vira lata  </a>
+            </li>
 
-
-
-   </section>
+        </ul>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script>
         const swiper = new Swiper('.swiper', {
         spaceBetween: 10,
         slidesPerView: 3,
+        pagination: {
+            el: '.wiper-pagination',
+            type: 'bullets',
+        }
         });
     </script>
 
