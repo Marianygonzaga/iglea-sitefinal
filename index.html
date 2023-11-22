@@ -1,155 +1,332 @@
 <!DOCTYPE html>
 <html>
-<head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>CACHORRO</title>
-        <link rel="stylesheet" href="reset.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
-        <link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraBooks</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-   <header class="cabecalho">
+    <header class="cabeçalho">
         <div class="container">
-            <input type="checkbox" id="menu" class="container_botao">
-        <label for="menu">
-            <span class="cabecalho_cachorro container_imagem"></span>
-        </label>
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu" class="container__rotulo">
+                <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__titulo">Categorias</li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">RAÇAS DE PORTE GRANDE</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">RAÇAS DE MEDIO PORTE</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">RAÇAS DE PEQUENO PORTE</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">PETSHOPS</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">AGENDAMENTOS</a>
+                </li>
+            </ul>
+            <img src="img/logopata.png" alt="Logo da Alurabooks" class="container__imagem">
+            <h1 class="container__titulo"><b class="container__titulo--negrito">AU-AU</b></h1>
+        </div>
 
-        <ul class="lista-menu">
-            <li class="lista-menu_titulo">categorias</li>
-            <li class="lista-menu_item"> 
-                <a href="#" class="lista-menu_link">raças e porte grande</a>
-            </li>
-            <li class="lista-menu_item"> 
-                <a href="#" class="lista-menu_link">raças e porte medio</a>
-            </li>
-            <li class="lista-menu_item"> 
-                <a href="#" class="lista-menu_link">raças e porte ṕequeno</a>
-            </li>
-            <li class="lista-menu_item"> 
-                <a href="#" class="lista-menu_link">Petshop</a>
-            </li>
-            <li class="lista-menu_item"> 
-                <a href="#" class="lista-menu_link">agenamentos</a>
-            </li>
+        <ul class="opções">
+            <input type="checkbox" id="opções-menu" class="opções__botão">
+            <label for="opções-menu" class="opções__rotulo">
+                <li class="opções__item">Categorias de cachorro</li>
+            </label>
+
+            <ul class="lista-menu">
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">RAÇA DE PORTE GRANDE</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">RAÇAS DE PORTE MEDIO</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">RAÇAS DE PEQUENO PORTE</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">PETSHOPS</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">AGENAMENTOS</a>
+                </li>
+            </ul>
+
+            <li class="opções__item"><a href="#" class="opções__link">Favoritos</a></li>
+            <li class="opções__item"><a href="#" class="opções__link">Meus Pets</a></li>
         </ul>
 
-            <img src="img/logopata.png" alt="logo cachorro" class="container_imagem">
-        </div>
         <div class="container">
-            <a href="#"> <img src="img/Favoritos.svg" alt="meu favoritos" class="container_imagem"></a>
-            <a href="#"> <img src="img/Compras.svg" alt="carrinhos e compras" class="container_imagem"></a>
-            <a href="#"> <img src="img/Usuário.svg" alt="meu peril" class="container_imagem"></a>
+            <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos"
+                    class="container__imagem container__imagem-transparente"></a>
+            <a href="#" class="container__link">
+                <img src="img/Compras.svg" alt="Carrinhos de compras" class="container__imagem">
+                <p class="container__texto">Minha sacola</p>
+            </a>
+            <a href="#" class="container__link">
+                <img src="img/Usuario.png" alt="Meu perfil" class="container__imagem">
+                <p class="container__texto">Meu perfil</p>
+            </a>
         </div>
-   </header>
-
-   <section class="banner">
-    <h2 class="banner__titulo"> Ja sabe por onde começar?</h2>
-    <p class="banner_texto"> Encontre o cachorrinho dos seus sonhos!</p>
-    <input type="search" class="banner__pesquisa" placeholder=" Qual raça você deseja?">
-   </section>
-
-   <section class="carrossel">
-        <h2 class="carrossel__titulo"> Cachorros</h2> 
-
+    </header>
+    <section class="banner">
+        <h2 class="banner__titulo">Já sabe qual cachorro você quer?</h2>
+        <p class="banner__texto">Encontre o cachorinho dos seus sonhos!</p>
+        <input type="search" class="banner__pesquisa" placeholder="Qual raça você dejesa">
+    </section>
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Cachorros</h2>
         <!-- Slider main container -->
-    <div class="swiper">
-    <!-- Additional required wrapper -->
-    <!-- If we meed pagination -->
-    <div class="swiper-pagination"></div>
+        <div class="carrossel__container">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
 
-    <div class="swiper-wrapper">
-      <!-- Slides -->
-      <div class="swiper-slide"> <img src="img/pastor alemao de corpo.jpg" alt="pastor alemao de corpo-raca de grande porte"> </div>
-      <div class="swiper-slide"> <img src="img/border collie de corpo.jpeg" alt="border collie de corpo-raca de grande porte"> </div>
-      <div class="swiper-slide"> <img src="img/Rottweiler.png" alt="rottweiler de corpo-raca de grande porte"></div>
-      <div class="swiper-slide"> <img src="img/beagle de corpo.png" alt="beagle de corpo-raca de medio porte"></div>
-      <div class="swiper-slide"> <img src="img/poodle de corpo.jpg" alt="poodle de corpo-raca de medio porte "></div>
-      <div class="swiper-slide"> <img src="img/buldogue de corpo.jpeg" alt="buldogue de corpo-raca de medio porte "></div>
-      <div class="swiper-slide"> <img src="img/lulu da pomerania.jpg" alt="lulu da pomerania de corpo-raca de pequeno porte "></div>
-      <div class="swiper-slide"> <img src="img/Yorkshire de corpo.jpg" alt="poodle de corpo-raca de pequeno porte "></div>
-      <div class="swiper-slide"> <img src="img/pug.jpeg" alt="pug de corpo-raca de pequeno porte "></div>
-      </div>
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="img/chau chau.jpg" alt="chau chau"></div>
+                    <div class="swiper-slide"><img src="img/Rottweiler.png" alt="Rottweiler-grande porte"></div>
+                    <div class="swiper-slide"><img src="img/border collie de corpo.jpeg" alt="border collie-grande porte"></div>
+                    <div class="swiper-slide"><img src="img/beagle de corpo.png" alt="beagle-medio porte"></div>
+                    <div class="swiper-slide"><img src="img/poodle de corpo.jpg" alt="poodle-medio porte"></div>
+                    <div class="swiper-slide"><img src="img/buldogue de corpo.jpeg" alt="buldogue-medio porte"></div>
+                    <div class="swiper-slide"><img src="img/lulu da pomerania.jpg" alt="lulu da pomerania-pequeno porte"></div>
+                    <div class="swiper-slide"><img src="img/dachshund.jpeg" alt="dachshund-pequeno porte"></div>
+                    <div class="swiper-slide"><img src="img/pug.jpeg" alt="pug-pequeno porte"></div>
+                </div>
 
-  
-    <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-    </div>
-
-    <div class="card">
-        <!-- 1° linha -->
-        <div class="card__descrição">
-            <!-- 1° coluna -->
-            <div class="descrição">
-                <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
-                <h2 class="descrição__titulo-livro">Goldem Retriever</h2>
-                <p class="descrição__texto">Os Goldens são cachorros super amigáveis e apegados ao dono, são brincalhẽos, cheios de energia e adoram crianças </p>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
-            <!-- 2° coluna -->
-            <img src="img/golden.jpg" class="descrição__imagem">
-        </div>
 
-        <!-- 2° linha -->
-        <div class="card__botões">
-            <!-- 1° coluna -->
-            <ul class="botões">
-                <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar receita"></li>
-                <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar a minha lista"></li>
-            </ul>
-            <!-- 2° coluna -->
-            <a href="#" class="botões__ancora"> Saiba mais</a>
+            <div class="card">
+                <!-- 1º linha -->
+                <div class="card__descrição">
+                    <!-- 1º coluna -->
+                    <div class="descrição">
+                        <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
+                        <h2 class="descrição__titulo-livro">Goldem Retriever</h2>
+                        <p class="descrição__texto">Golden Retriever são super apegado aos tutores e gosta muito de agradar as pessoas que ama.
+    Cheios de energia, esses animais amam brincar, correr e nadar, e se dão muito bem com estranhos, crianças, outros cachorros e fazem amizade com todo mundo.</p>
+                    </div>
+                    <!-- 2º coluna -->
+                    <img src="img/golden.jpg" class="descrição__imagem">
+                </div>
+
+                <!-- 2º linha -->
+                <div class="card__botões">
+                    <!-- 1º coluna -->
+                    <ul class="botões">
+                        <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+                        <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+                    </ul>
+                    <!-- 2º coluna -->
+                    <a href="#" class="botões__ancora">Saiba mais</a>
+                </div>
+            </div>
         </div>
-      </div>
+    </section>
+
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Mais procurados</h2>
+        <!-- Slider main container -->
+        <div class="carrossel__container">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="img/Yorkshire de corpo.jpg" alt="Yorkshire "></div>
+                    <div class="swiper-slide"><img src="img/shih-tzu.jpg" alt="shih-tzu"></div>
+                    <div class="swiper-slide"><img src="img/pastor alemao de corpo.jpg" alt="pastor alemão"></div>
+                    <div class="swiper-slide"><img src="img/husky Siberiano.jpeg" alt="husky"></div>
+                    <div class="swiper-slide"><img src="img/pinscher.jpg" alt="pinscher"></div>
+                    <div class="swiper-slide"><img src="img/chihuahua_p.webp" alt="chihuahua"></div>
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+            <div class="card">
+                <!-- 1º linha -->
+                <div class="card__descrição">
+                    <!-- 1º coluna -->
+                    <div class="descrição">
+                        <img src="img/Estrelinhas.png" alt="Avaliação 5 estrelas">
+                        <h3 class="descrição__titulo">Cachorro do Mês</h3>
+                        <h2 class="descrição__titulo-livro">shih-tzu</h2>
+                        <p class="descrição__texto"> Shih-tzu são cães muito inteligentes, compaheiros e carinhosos. São doceis e amigaveis com crianças e outros cães.
+                        </p>
+                    </div>
+                    <!-- 2º coluna -->
+                    <img src="img/shitz.jpeg" class="descrição__imagem">
+                </div>
+
+                <!-- 2º linha -->
+                <div class="card__botões">
+                    <!-- 1º coluna -->
+                    <ul class="botões">
+                        <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+                        <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+                    </ul>
+                    <!-- 2º coluna -->
+                    <a href="#" class="botões__ancora">Saiba mais</a>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section class="tópicos">
-        <h2 class=" tópicos__título"> TÓPICO VISITADOS RECENTEMENTE</h2>
+        <h2 class="tópicos__titulo">CACHORROS VISITADOS RECENTEMENTE</h2>
         <ul class="tópicos__lista">
             <li class="tópicos__item">
-                <a href="#" class="tópicos__link">  Yorkshire</a>
+                <a href="#" class="tópicos__link">Shih-tzu</a>
             </li>
             <li class="tópicos__item">
-                <a href="#" class="tópicos__link"> Golden Retriever</a>
+                <a href="#" class="tópicos__link">Yorkshire</a>
             </li>
             <li class="tópicos__item">
-                <a href="#" class="tópicos__link"> Shih tzu</a>
+                <a href="#" class="tópicos__link">border Collie</a>
             </li>
             <li class="tópicos__item">
-                <a href="#" class="tópicos__link"> pinscher</a>
+                <a href="#" class="tópicos__link">Pastor alemão</a>
             </li>
             <li class="tópicos__item">
-                <a href="#" class="tópicos__link"> lulu da pmerania </a>
+                <a href="#" class="tópicos__link"> Goldem Retriever</a>
             </li>
             <li class="tópicos__item">
-                <a href="#" class="tópicos__link"> poodle </a>
+                <a href="#" class="tópicos__link">lulu da pmerania </a>
             </li>
             <li class="tópicos__item">
-                <a href="#" class="tópicos__link"> vira lata  </a>
+                <a href="#" class="tópicos__link">pinscher</a>
             </li>
-
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">chihuahua</a>
+            </li>
         </ul>
     </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <section class="contato">
+        <div class="contato__descrição">
+            <h2 class="contato__titulo">Fique por dentro de novas raças!</h2>
+            <p class="contato__texto">Atualizações de novas raças, promoções e do mundo canino.</p>
+        </div>
+        <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
+    </section>
+
+    <hr />
+
+    <footer class="rodapé">
+        <h2 class="rodapé__titulo">Grupo AU-AU</h2>
+        <ul class="lista-rodapé">
+            <li class="lista-rodapé__titulo">Educação</li>
+            <li class="lista-rodapé__item">
+                <img src="img/CasaDoCodigo.png" alt="Logo da casa do código">
+                <a href="#" class="lista-rodapé__link">Casa do código</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/Caelum.png" alt="Logo da caelum">
+                <a href="#" class="lista-rodapé__link">Caelum</a>
+            </li>
+        </ul>
+
+        <ul class="lista-rodapé">
+            <li class="lista-rodapé__titulo">Educação online</li>
+            <li class="lista-rodapé__item">
+                <img src="img/Alura.svg" alt="Logo da Alura">
+                <a href="#" class="lista-rodapé__link">Alura</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/AluraEmpresas.svg" alt="Logo da Alura para Empresas">
+                <a href="#" class="lista-rodapé__link">Alura para Empresas</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/AluraLATAM.svg" alt="Logo da Alura Latam">
+                <a href="#" class="lista-rodapé__link">Alura LATAM</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/AluraStart.svg" alt="Logo da Alura START">
+                <a href="#" class="lista-rodapé__link">Alura Start</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/MusicDot.svg" alt="Logo da Music Dot">
+                <a href="#" class="lista-rodapé__link">Music Dot</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/AluraLingua.svg" alt="Logo da Alura Lingua">
+                <a href="#" class="lista-rodapé__link">Alura Lingua</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/PM3.svg" alt="Logo da PM3">
+                <a href="#" class="lista-rodapé__link">PM3</a>
+            </li>
+        </ul>
+
+        <ul class="lista-rodapé">
+            <li class="lista-rodapé__titulo">Comunidade</li>
+            <li class="lista-rodapé__item">
+                <img src="img/HipstersTech.png" alt="Logo do Hipsters ponto Tech">
+                <a href="#" class="lista-rodapé__link">Hipsters ponto Tech</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/ScubaDev.svg" alt="Logo do Scuba Dev">
+                <a href="#" class="lista-rodapé__link">Scuba Dev</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/LayersTech.svg" alt="Logo do Layers ponto Tech">
+                <a href="#" class="lista-rodapé__link">Layers ponto Tech</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/LikeABoss.svg" alt="Logo do Like a Boss">
+                <a href="#" class="lista-rodapé__link">Like a Boss</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/CarreiraSemFronteira.png" alt="Logo do Carreira sem fronteiras">
+                <a href="#" class="lista-rodapé__link">Carreira sem fronteiras</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/HipstersJobs.svg" alt="Logo do Hipsters ponto jobs">
+                <a href="#" class="lista-rodapé__link">Hipsters ponto jobs</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/GUJ.svg" alt="Logo do GUJ">
+                <a href="#" class="lista-rodapé__link">GUJ</a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script>
         const swiper = new Swiper('.swiper', {
-        spaceBetween: 10,
-        slidesPerView: 3,
-        pagination: {
-            el: '.wiper-pagination',
-            type: 'bullets',
-        }
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
         });
     </script>
-
-        
 </body>
 
 </html>
